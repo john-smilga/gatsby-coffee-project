@@ -18,7 +18,7 @@ export default function Contact() {
                 className="form-control"
                 name="name"
                 id="name"
-                placeholder="name"
+                placeholder="john smith"
               />
             </div>
             {/* name */}
@@ -30,7 +30,7 @@ export default function Contact() {
                 className="form-control"
                 name="email"
                 id="email"
-                placeholder="email"
+                placeholder="email@email.com"
               />
             </div>
             {/* email */}
@@ -42,6 +42,7 @@ export default function Contact() {
                 id="description"
                 className="form-control"
                 rows="5"
+                placeholder="your description here....."
               />
             </div>
             {/* email */}
