@@ -5,7 +5,7 @@ export default function contact() {
     <Layout>
       <form
         name="contact"
-        action="/contact/?no-cache=1"
+        action="/?no-cache=1"
         method="POST"
         data-netlify="true"
       >
