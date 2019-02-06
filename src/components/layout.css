@@ -1,0 +1,49 @@
+:root {
+  --mainBrown: #2d1e1f;
+  --mainYellow: rgb(255, 158, 9);
+  --mainGrey: #ece8dc;
+  --mainWhite: #fff;
+  --mainDark: #000;
+}
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+.text-yellow {
+  color: var(--mainYellow) !important;
+}
+.btn-yellow {
+  color: var(--mainYellow) !important;
+  border-color: var(--mainYellow) !important;
+}
+.btn-yellow:hover {
+  background: var(--mainYellow) !important;
+  color: var(--mainDark) !important;
+}
+.title {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.menu {
+  background: var(--mainGrey);
+}
+.cart-link {
+  cursor: pointer;
+  border: 1px solid var(--mainYellow);
+}
+.contact {
+  background: var(--mainGrey);
+}
+.footer {
+  background: var(--mainDark);
+}
