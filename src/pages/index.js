@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
       <Info />
       <Menu items={data.menu} />
       <Products />
-      <Contact />
+      {/* <Contact /> */}
       <form
         name="contact"
         method="POST"
