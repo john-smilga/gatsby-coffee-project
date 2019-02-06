@@ -10,9 +10,6 @@ const getProducts = graphql`
           id
           title
           price
-          description {
-            description
-          }
           image {
             fluid(maxHeight: 426) {
               src
