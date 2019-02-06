@@ -6,9 +6,21 @@ export default function Contact() {
       <Title title="contact us" />
       <div className="row">
         <div className="col-10 col-sm-8 col-md-6 mx-auto">
-          <form action="" method="post" data-netlify="true">
-            <input type="text" name="name" />
-            <button type="submit">submit</button>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>
+                Email: <input type="text" name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Message: <textarea name="message" />
+              </label>
+            </p>
+            <div data-netlify-recaptcha="true" />
+            <p>
+              <button type="”submit”">Send</button>
+            </p>
           </form>
         </div>
       </div>
