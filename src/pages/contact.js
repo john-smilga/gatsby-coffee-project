@@ -3,7 +3,12 @@ import Layout from "../components/layout";
 export default function contact() {
   return (
     <Layout>
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        action="?no-cache=1"
+        method="POST"
+        data-netlify="true"
+      >
         <p>
           <label>
             Email: <input type="text" name="name" />
