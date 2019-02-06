@@ -4,11 +4,19 @@ export default function contact() {
   return (
     <Layout>
       <form
+        key="contact-form"
         name="contact"
-        action="/?no-cache=1"
         method="POST"
+        action="/contact/"
+        data-netlify-honeypot="full-name"
         data-netlify="true"
       >
+        <div style={{ display: "none" }}>
+          <label htmlFor="full-name">
+            Don’t fill out this field if you’re a human.
+          </label>
+          <input type="text" id="full-name" name="full-name" />
+        </div>
         <p>
           <label>
             Email: <input type="text" name="name" />

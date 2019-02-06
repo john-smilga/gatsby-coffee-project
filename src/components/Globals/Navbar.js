@@ -51,17 +51,14 @@ https://www.iconfinder.com/webalys */}
               </Link>
             </li>
             <li className="nav-item">
-              <a
-                to="#"
-                className="nav-link snipcart-checkout cart-link p-1 mx-2"
-              >
+              <button className="btn nav-link snipcart-checkout cart-link p-1 mx-2">
                 <span class="snipcart-summary cart-total text-yellow">
                   <span>Cart Items : </span>
                   <span class="snipcart-total-items" />{" "}
                   <span>Cart Total : </span>
                   <span class="snipcart-total-price" />
                 </span>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
