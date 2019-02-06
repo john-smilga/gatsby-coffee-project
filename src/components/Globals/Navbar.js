@@ -46,6 +46,11 @@ https://www.iconfinder.com/webalys */}
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/contact" className="nav-link p-1 mx-2">
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
               <a
                 to="#"
                 className="nav-link snipcart-checkout cart-link p-1 mx-2"
