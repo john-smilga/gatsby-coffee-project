@@ -1,10 +1,23 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 import logo from "../../images/logo.svg";
+import { FaCartArrowDown } from "react-icons/fa";
 export default class Navbar extends Component {
   state = {
     navbarOpen: false,
-    css: "collapse navbar-collapse"
+    css: "collapse navbar-collapse",
+    links: [
+      {
+        id: 1,
+        path: "/",
+        text: "home"
+      },
+      {
+        id: 2,
+        path: "/about",
+        text: "about"
+      }
+    ]
   };
   navbarHandler = () => {
     this.state.navbarOpen
@@ -35,26 +48,18 @@ https://www.iconfinder.com/webalys */}
         </button>
         <div className={this.state.css}>
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <Link to="/" className="nav-link p-1 mx-2">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link p-1 mx-2">
-                About
-              </Link>
-            </li>
+            {this.state.links.map(link => {
+              return (
+                <li key={link.id} className="nav-item">
+                  <Link to={link.path} className="nav-link text-capitalize ">
+                    {link.text}
+                  </Link>
+                </li>
+              );
+            })}
 
-            <li className="nav-item">
-              <button className="btn nav-link snipcart-checkout cart-link p-1 mx-2">
-                <span class="snipcart-summary cart-total text-yellow">
-                  <span>Cart Items : </span>
-                  <span class="snipcart-total-items" />{" "}
-                  <span>Cart Total : </span>
-                  <span class="snipcart-total-price" />
-                </span>
-              </button>
+            <li className="nav-item  ml-sm-5">
+              <FaCartArrowDown className="cart-icon snipcart-checkout" />
             </li>
           </ul>
         </div>

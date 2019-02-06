@@ -34,12 +34,23 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+.about-background {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .menu {
   background: var(--mainGrey);
 }
-.cart-link {
+.cart-icon {
   cursor: pointer;
-  border: 1px solid var(--mainYellow);
+  color: var(--mainYellow);
+  font-size: 2rem;
 }
 .contact {
   background: var(--mainGrey);

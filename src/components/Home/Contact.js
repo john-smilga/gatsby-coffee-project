@@ -12,7 +12,7 @@ export default function Contact() {
           >
             {/* name */}
             <div className="form-group">
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 className="form-control"
@@ -24,7 +24,7 @@ export default function Contact() {
             {/* name */}
             {/* email */}
             <div className="form-group">
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="text"
                 className="form-control"
@@ -36,7 +36,7 @@ export default function Contact() {
             {/* email */}
             {/* description */}
             <div className="form-group">
-              <label for="description">Description</label>
+              <label htmlFor="description">Description</label>
               <textarea
                 name="description"
                 id="description"
