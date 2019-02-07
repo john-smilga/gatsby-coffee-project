@@ -48,7 +48,7 @@ export default function Contact() {
             {/* email */}
             <button
               type="submit"
-              className="btn btn-yellow btn-block text-capitalize"
+              className="btn btn-yellow btn-block text-capitalize mt-5"
             >
               submit
             </button>
