@@ -1,6 +1,6 @@
 :root {
   --mainBrown: #2d1e1f;
-  --mainYellow: rgb(255, 158, 9);
+  --mainYellow: #ff9e09;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #000;
@@ -22,6 +22,15 @@ h6 {
 .text-yellow {
   color: var(--mainYellow) !important;
 }
+.title {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+.cart-icon {
+  cursor: pointer;
+  color: var(--mainYellow);
+  font-size: 2rem;
+}
 .btn-yellow {
   color: var(--mainYellow) !important;
   border-color: var(--mainYellow) !important;
@@ -29,10 +38,6 @@ h6 {
 .btn-yellow:hover {
   background: var(--mainYellow) !important;
   color: var(--mainDark) !important;
-}
-.title {
-  letter-spacing: 0.3rem;
-  font-weight: 400;
 }
 .default-background {
   min-height: 100vh;
@@ -56,11 +61,6 @@ h6 {
 }
 .menu {
   background: var(--mainGrey);
-}
-.cart-icon {
-  cursor: pointer;
-  color: var(--mainYellow);
-  font-size: 2rem;
 }
 .contact {
   background: var(--mainGrey);
