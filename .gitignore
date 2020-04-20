@@ -4,7 +4,6 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.env.development
 # Runtime data
 pids
 *.pid
@@ -52,7 +51,6 @@ typings/
 *.tgz
 
 # dotenv environment variables file
-.env
 
 # gatsby files
 .cache/
